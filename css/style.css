@@ -151,8 +151,7 @@ max-width: 100%;
 
 #navigation li a {
     color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size:20px;
     font-family: lemon, 'Times New Roman', Times, serif;
 }
 
@@ -161,6 +160,6 @@ max-width: 100%;
 }
 
 .navbar-toggler-icon {
-    background: url("../images/icon/menu.png");
+    background: url("../images/icons/menu.png");
     background-size: 100%;
 }
