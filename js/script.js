@@ -10,7 +10,7 @@ $(document).ready(function() {
         strings: ["Web Developer.", "Content Creator.", "Visionary."],
         typeSpeed: 70,
         loop: true,
-        startDelay: 1000,
+        startDelay: 1000, 
         showCursor: false
     });
 
