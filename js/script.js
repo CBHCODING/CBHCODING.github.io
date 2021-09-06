@@ -67,6 +67,19 @@ $(document).ready(function() {
 
     });
 
-   
+ 
+
+     
+
+
 });
 
+$(document).ready(function() {
+
+    $('.work-holder-element').hover( 
+        function() {$(this).addClass('active')},
+        function() {$(this).removeClass('active')}
+    
+    );
+
+});
