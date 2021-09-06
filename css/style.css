@@ -1,6 +1,6 @@
 @font-face {
     font-family: "lemon";
-    src: url("../fonts/LemonMilk.otf") format("truetype");
+    src: url("../fonts/EuroStyle.ttf") format("truetype");
     }
 
 
@@ -73,9 +73,14 @@ font-size: 60px;
     padding: 100px 0;
 }
 
+.section .col-md-5 p {
+    margin-bottom: 3px;
+}
+
 .aboutImage {
 max-width: 100%;
-
+border-radius: 25px;
+margin-bottom: 1rem;
 }
 
 .skillsSection {
@@ -166,4 +171,17 @@ max-width: 100%;
 .navbar-toggler-icon {
     background: url("../images/icons/menu.png");
     background-size: 100%;
+}
+
+
+#work.section .work-holder {
+
+}
+
+#work.section .work-holder .work-holder-element {
+
+}
+
+#work.section .work-holder .work-holder-element div {
+
 }
