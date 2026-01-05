@@ -42,6 +42,7 @@ p {
 }
 
 
+
 .slides-navigation .prev,
 .slides-navigation .next {
     width: 47px;
@@ -299,4 +300,8 @@ margin-bottom: 1rem;
 
 #contact {
     padding-bottom: 50px;
+}
+
+.work-holder-element-info {
+    padding: 1rem;
 }
