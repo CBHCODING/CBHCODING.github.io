@@ -302,6 +302,6 @@ margin-bottom: 1rem;
     padding-bottom: 50px;
 }
 
-.work-holder-element-info {
-    padding: 1rem;
+.work-holder-element-info li {
+    margin:0 1rem;
 }
