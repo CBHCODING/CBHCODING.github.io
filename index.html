@@ -1,342 +1,443 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title></title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/superslides.css" />
-  <link rel="stylesheet" href="css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cierra Hill — Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <script defer src="js/fontawesome-all.js"></script>
 </head>
 
 <body>
 
-  <div id="slides">
-
-    <div class="overlay"></div>
-
-    <div class="slides-container">
-      <img src="images/slide1.jpeg" alt="">
-      <img src="images/slide2.jpeg" alt="">
-      <img src="images/slide3.jpeg" alt="">
-    </div>
-    <div class="titleMessage">
-      <div class="heading">
-        <p class="main">CIERRA HILL</p>
-        <p class="sub typed"></p>
-      </div>
-    </div>
-    
-  </div>
-
-  <nav id="navigation" class="navbar navbar-expand-lg">
-
-
-    
-
-    <div class="navbar-collapse justify-content-center " id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#work">WORK</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">CONTACT</a>
-        </li>
-      </ul>
-    </div>
+  <!-- Navigation -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">CH</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#work" class="nav-link">Work</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
   </nav>
 
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-label">Front-End Developer &nbsp;·&nbsp; Oklahoma City</div>
+      <h1 class="hero-name">
+        <span class="hero-name-line">CIERRA</span>
+        <span class="hero-name-line hero-name-offset">HILL</span>
+      </h1>
+      <div class="hero-divider"></div>
+      <p class="hero-typed"><span id="typed"></span><span class="cursor">|</span></p>
+    </div>
+  </section>
 
-  <div id="about" class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img class="aboutImage" src="images/selfie.jpg">
-          <p><strong>Name:</strong> Cierra Hill</p>
-          <p><strong>Age:</strong> 26</p>
-          <p><strong>Location:</strong> Oklahoma City, Oklahoma</p>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="section-label">001 &nbsp;/&nbsp; About</div>
+    <div class="about-grid">
+      <div class="about-photo-col">
+        <div class="about-photo-wrap">
+          <img src="images/selfie.jpg" alt="Cierra Hill" class="about-photo">
+          <div class="about-photo-border"></div>
         </div>
-        <div class="col-md-8">
-
-          <h1>MY STORY</h1>
-          <p>I am a front end web developer with over 8 years of professional experience working in CMS like Wordpress,
-            Bigcommerce, and Shopify. I am completely self taught and plan on diving into frameworks like React and
-            Angular in the future. I work with a team extremely well and love interacting with people!
-
-            <p>Fun Fact: In my free time I am a gaming content creator on twitch and a DJ!</p>
+        <div class="about-details">
+          <div class="about-detail">
+            <span class="detail-label">Location</span>
+            <span class="detail-value">Oklahoma City, OK</span>
+          </div>
+          <div class="about-detail">
+            <span class="detail-label">Specialty</span>
+            <span class="detail-value">CMS Theme Development</span>
+          </div>
+          <div class="about-detail">
+            <span class="detail-label">Email</span>
+            <span class="detail-value">cierracodes@gmail.com</span>
+          </div>
         </div>
+      </div>
+      <div class="about-content-col">
+        <h2 class="section-heading reveal-up">MY STORY</h2>
+        <p class="about-bio reveal-up">I'm a self-taught front-end developer with over <strong>8 years</strong> of professional experience building custom themes in WordPress, BigCommerce, and Shopify. I thrive in collaborative environments and love turning complex problems into clean, fast, beautiful web experiences.</p>
+        <p class="about-bio reveal-up">When I'm not shipping code, I'm a <strong>gaming content creator on Twitch</strong> and a <strong>DJ</strong> — creativity doesn't stop at the editor.</p>
+        <div class="about-stats">
+          <div class="stat reveal-up">
+            <div class="stat-num-row">
+              <span class="stat-number" data-target="8">0</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat reveal-up">
+            <div class="stat-num-row">
+              <span class="stat-number" data-target="30">0</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat reveal-up">
+            <div class="stat-num-row">
+              <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Projects Collaborated On</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Work -->
+  <!-- Skills -->
+  <section id="skills" class="section skills-section">
+    <div class="section-label">002 &nbsp;/&nbsp; Skills</div>
+    <h2 class="section-heading reveal-up">TECHNICAL<br>SKILLS</h2>
 
+    <div class="skills-list">
+      <div class="skill-row reveal-up">
+        <span class="skill-num">01</span>
+        <span class="skill-title">AI Automation</span>
+        <span class="skill-tag">Emerging Tech</span>
+        <div class="skill-line"></div>
+      </div>
+      <div class="skill-row reveal-up">
+        <span class="skill-num">02</span>
+        <span class="skill-title">HTML</span>
+        <span class="skill-tag">Markup</span>
+        <div class="skill-line"></div>
+      </div>
+      <div class="skill-row reveal-up">
+        <span class="skill-num">03</span>
+        <span class="skill-title">CSS &amp; SCSS</span>
+        <span class="skill-tag">Styling</span>
+        <div class="skill-line"></div>
+      </div>
+      <div class="skill-row reveal-up">
+        <span class="skill-num">04</span>
+        <span class="skill-title">JavaScript</span>
+        <span class="skill-tag">Scripting</span>
+        <div class="skill-line"></div>
+      </div>
+      <div class="skill-row reveal-up">
+        <span class="skill-num">05</span>
+        <span class="skill-title">jQuery</span>
+        <span class="skill-tag">Library</span>
+        <div class="skill-line"></div>
+      </div>
+      <div class="skill-row reveal-up">
+        <span class="skill-num">06</span>
+        <span class="skill-title">PHP</span>
+        <span class="skill-tag">Backend</span>
+        <div class="skill-line"></div>
+      </div>
+      <div class="skill-row reveal-up">
+        <span class="skill-num">07</span>
+        <span class="skill-title">Liquid</span>
+        <span class="skill-tag">Templating</span>
+        <div class="skill-line"></div>
+      </div>
+      <div class="skill-row reveal-up">
+        <span class="skill-num">08</span>
+        <span class="skill-title">React</span>
+        <span class="skill-tag">Framework</span>
+        <div class="skill-line"></div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="work" class="section work-section">
+    <div class="section-label">003 &nbsp;/&nbsp; Work</div>
+    <div class="work-header">
+      <h2 class="section-heading reveal-up">MY WORK</h2>
+      <p class="work-subtitle reveal-up">Built from the ground up — custom themes, CMS platforms, and static builds.</p>
+    </div>
+    <div class="work-filters reveal-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="shopify">Shopify</button>
+      <button class="filter-btn" data-filter="wordpress">WordPress</button>
+      <button class="filter-btn" data-filter="bigcommerce">BigCommerce</button>
+      <button class="filter-btn" data-filter="static">Static</button>
+    </div>
+    <div class="work-grid">
+
+      <div class="work-card" data-category="wordpress"
+        data-title="Housing Trust"
+        data-tags="WordPress,Custom PHP Theme,SCSS,JavaScript,ACF"
+        data-desc="Complete custom WordPress theme built from scratch, fully catered to the client's brand identity and content needs."
+        data-video="videos/housingtrust.mp4">
+        <div class="work-card-inner">
+          <img src="images/housingtrust.jpg" alt="Housing Trust" class="work-card-img">
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <div class="work-card-tags">
+              <span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">SCSS</span><span class="tag">ACF</span>
+            </div>
+            <h3 class="work-card-title">Housing Trust</h3>
+            <button class="work-card-btn">View Details <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card" data-category="wordpress"
+        data-title="O2 Sabbatical"
+        data-tags="WordPress,Custom PHP Theme,SCSS,JavaScript,ACF"
+        data-desc="Custom WordPress theme built to match the brand's calm, wellness-focused identity with clean layout and smooth interactions."
+        data-video="videos/o2sabbatical.mp4">
+        <div class="work-card-inner">
+          <img src="images/o2sabbatical.png" alt="O2 Sabbatical" class="work-card-img">
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <div class="work-card-tags">
+              <span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">SCSS</span><span class="tag">ACF</span>
+            </div>
+            <h3 class="work-card-title">O2 Sabbatical</h3>
+            <button class="work-card-btn">View Details <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card" data-category="wordpress"
+        data-title="Fly Omni"
+        data-tags="WordPress,Custom PHP Theme,SCSS,JavaScript,ACF"
+        data-desc="Custom WordPress theme built to support a modern aviation brand — bold design, fast load times, and strong mobile presence."
+        data-video="videos/flyomni.mp4">
+        <div class="work-card-inner">
+          <img src="images/flyomni.png" alt="Fly Omni" class="work-card-img">
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <div class="work-card-tags">
+              <span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">SCSS</span><span class="tag">ACF</span>
+            </div>
+            <h3 class="work-card-title">Fly Omni</h3>
+            <button class="work-card-btn">View Details <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card" data-category="static"
+        data-title="DJ QLC"
+        data-tags="HTML,SCSS,JavaScript,jQuery,Netlify,GitHub"
+        data-desc="Static site built for DJ QLC — clean, bold layout with a focus on brand presence, event info, and music showcasing."
+        data-video="videos/djqlc.mp4">
+        <div class="work-card-inner">
+          <img src="images/djqlc.png" alt="DJ QLC" class="work-card-img">
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <div class="work-card-tags">
+              <span class="tag">HTML</span><span class="tag">SCSS</span><span class="tag">jQuery</span>
+            </div>
+            <h3 class="work-card-title">DJ QLC</h3>
+            <button class="work-card-btn">View Details <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card" data-category="static"
+        data-title="ARG Tulsa"
+        data-tags="HTML,SCSS,JavaScript,jQuery,Netlify,GitHub"
+        data-desc="Static site deployed via Netlify and GitHub — hand-coded with HTML, SCSS, and jQuery for a fast, lightweight experience."
+        data-video="videos/argtulsa.mp4">
+        <div class="work-card-inner">
+          <img src="images/arg.jpg" alt="ARG Tulsa" class="work-card-img">
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <div class="work-card-tags">
+              <span class="tag">HTML</span><span class="tag">SCSS</span><span class="tag">jQuery</span>
+            </div>
+            <h3 class="work-card-title">ARG Tulsa</h3>
+            <button class="work-card-btn">View Details <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card" data-category="bigcommerce"
+        data-title="Lush &amp; Vine"
+        data-tags="BigCommerce,Cornerstone Theme,SCSS,Handlebars,jQuery"
+        data-desc="Custom BigCommerce storefront built on the Cornerstone theme — fully tailored layout, custom SCSS, and Handlebars templating."
+        data-video="videos/lushandvine.mp4">
+        <div class="work-card-inner">
+          <img src="images/lush.jpg" alt="Lush & Vine" class="work-card-img">
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <div class="work-card-tags">
+              <span class="tag">BigCommerce</span><span class="tag">SCSS</span><span class="tag">Handlebars</span>
+            </div>
+            <h3 class="work-card-title">Lush &amp; Vine</h3>
+            <button class="work-card-btn">View Details <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card" data-category="bigcommerce"
+        data-title="Vinyl Shake"
+        data-tags="BigCommerce,Cornerstone Theme,SCSS,Handlebars,jQuery"
+        data-desc="BigCommerce storefront with a custom Cornerstone theme — unique product page layouts and brand-matched SCSS styling."
+        data-video="videos/vinylshake.mp4">
+        <div class="work-card-inner">
+          <img src="images/vinyl.jpg" alt="Vinyl Shake" class="work-card-img">
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <div class="work-card-tags">
+              <span class="tag">BigCommerce</span><span class="tag">SCSS</span><span class="tag">Handlebars</span>
+            </div>
+            <h3 class="work-card-title">Vinyl Shake</h3>
+            <button class="work-card-btn">View Details <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card" data-category="shopify"
+        data-title="Petras Jewelers"
+        data-tags="Shopify,Liquid,jQuery,SCSS"
+        data-desc="Custom Shopify theme for a jeweler — elegant product displays, refined layouts, and brand-forward styling from top to bottom."
+        data-video="videos/petrasjewelers.mp4">
+        <div class="work-card-inner">
+          <img src="images/petrasjewelers.png" alt="Petras Jewelers" class="work-card-img">
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <div class="work-card-tags">
+              <span class="tag">Shopify</span><span class="tag">Liquid</span><span class="tag">jQuery</span>
+            </div>
+            <h3 class="work-card-title">Petras Jewelers</h3>
+            <button class="work-card-btn">View Details <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card" data-category="shopify"
+        data-title="Polly's Jewelry"
+        data-tags="Shopify,Liquid,jQuery,SCSS"
+        data-desc="Custom Shopify theme built for a jewelry brand — refined product pages, custom collection layouts, and brand-matched styling throughout."
+        data-video="videos/pollysjewelry.mp4">
+        <div class="work-card-inner">
+          <img src="images/pollysjewelry.jpg" alt="Polly's Jewelry" class="work-card-img">
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <div class="work-card-tags">
+              <span class="tag">Shopify</span><span class="tag">Liquid</span><span class="tag">jQuery</span>
+            </div>
+            <h3 class="work-card-title">Polly's Jewelry</h3>
+            <button class="work-card-btn">View Details <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card" data-category="shopify"
+        data-title="Drink Zeroes"
+        data-tags="Shopify,Liquid,jQuery,SCSS"
+        data-desc="Custom Shopify storefront for a beverage brand — features a fully custom coded animated product slider built in Liquid with easily swappable elements, plus custom animated sections showcasing the cans with eye-catching motion and brand energy."
+        data-video="videos/drinkzeros.mp4">
+        <div class="work-card-inner">
+          <img src="images/drinkzeros.png" alt="Drink Zeroes" class="work-card-img">
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <div class="work-card-tags">
+              <span class="tag">Shopify</span><span class="tag">Liquid</span><span class="tag">jQuery</span>
+            </div>
+            <h3 class="work-card-title">Drink Zeroes</h3>
+            <button class="work-card-btn">View Details <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-card" data-category="shopify"
+        data-title="Beyond Paint"
+        data-tags="Shopify,Liquid,jQuery,SCSS"
+        data-desc="Custom Liquid theme built from scratch for a paint and home products brand — featuring fully custom coded interactive sections including a dynamic color visualizer that lets customers preview colors in real time."
+        data-video="videos/beyondpaint.mp4">
+        <div class="work-card-inner">
+          <img src="images/beyondpaint.png" alt="Beyond Paint" class="work-card-img">
+          <div class="work-card-overlay"></div>
+          <div class="work-card-content">
+            <div class="work-card-tags">
+              <span class="tag">Shopify</span><span class="tag">Liquid</span><span class="tag">jQuery</span>
+            </div>
+            <h3 class="work-card-title">Beyond Paint</h3>
+            <button class="work-card-btn">View Details <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-video-wrap">
+        <video id="modalVideo" autoplay loop muted playsinline preload="metadata">
+          Your browser doesn't support HTML5 video.
+        </video>
+        <div class="modal-video-placeholder" id="modalVideoPlaceholder">
+          <i class="fas fa-video"></i>
+          <p>Video coming soon</p>
+        </div>
+      </div>
+      <div class="modal-info">
+        <p class="modal-category" id="modalCategory"></p>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-tags" id="modalTags"></div>
       </div>
     </div>
   </div>
-  <div id="work" class="section">
-    <div class="col-md-12">
-      <h1 class='work-section-title'>My Work</h1>
-      <p style='text-align: center;'>List of websites I have built from the ground up, I have also collaborated on and built portions of 20+ other websites!</p>
-    </div>
-    <div class='col-md-12 work-holder'>
-     
-      <div class='work-holder-element col-md-3' style="background-image: url('images/housingtrust.jpg')">
-        <h1>Housing Trust</h1>
-        <div class="work-holder-element-info">
-          <h2>CMS & Languages</h2>
-         
-            <li>Wordpress</li>
-            <li>Complete Custom Theme Built Catered to Brand</li>
-            <li>PHP</li>
-            <li>SCSS</li>
-            <li>JS</li>
+  </section>
 
-        
-          <a class='workBtn' target="_blank" href='https://housingtrustsv.org/
-          '>View</a>
-        </div>
+  <!-- Contact -->
+  <section id="contact" class="section contact-section">
+    <div class="section-label">004 &nbsp;/&nbsp; Contact</div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h2 class="section-heading contact-heading reveal-up">LET'S BUILD<br>SOMETHING</h2>
+        <p class="contact-sub reveal-up">Got a project? Let's talk.</p>
       </div>
-<!-- 
-      <div class='work-holder-element col-md-3' style="background-image: url('images/3seas.jpg')">
-        <h1>3seas-energy</h1>
-        <div>
-          <h2>CMS & Languages</h2>
-         
-            <li>Wordpress</li>
-            <li>Complete Custom Theme Built Catered to Brand</li>
-            <li>PHP</li>
-            <li>SCSS</li>
-            <li>JS</li>
-
-        
-          <a class='workBtn' target="_blank" href='https://3seas-energy.com/
-          '>View</a>
-        </div>
-      </div> -->
-   
-      <div class='work-holder-element col-md-3' style="background-image: url('images/o2sabbatical.png')">
-        <h1>O2 Sabbatical</h1>
-        <div class="work-holder-element-info">
-          <h2>CMS & Languages</h2>
-         
-          <li>Wordpress</li>
-          <li>Complete Custom Theme Built Catered to Brand</li>
-          <li>PHP</li>
-          <li>SCSS</li>
-          <li>JS</li>
-        
-          <a class='workBtn' target="_blank" href='https://o2sabbatical.org/'>View</a>
-        </div>
-      </div>
-      <div class='work-holder-element col-md-3' style="background-image: url('images/flyomni.png')">
-        <h1>Fly Omni</h1>
-        <div>
-          <h2>CMS & Languages</h2>
-         
-          <li>Wordpress</li>
-          <li>Complete Custom Theme Built Catered to Brand</li>
-          <li>PHP</li>
-          <li>SCSS</li>
-          <li>JS</li>
-        
-          <a class='workBtn' target="_blank" href='https://flyomni.com/'>View</a>
-        </div>
-      </div>
-      <div class='work-holder-element col-md-3' style="background-image: url('images/arg.jpg')">
-        <h1>ARG Tulsa</h1>
-        <div class="work-holder-element-info">
-          <h2>CMS & Languages</h2>
-         
-            <li>Netlify</li>
-            <li>Github</li>
-            <li>Html</li>
-            <li>SCSS</li>
-            <li>JS & Jquery</li>
-        
-          <a class='workBtn' target="_blank" href='https://argtulsa.com/'>View</a>
-        </div>
-      </div>
-      <div class='work-holder-element col-md-3' style="background-image: url('images/mesh.png')">
-        <h1>Mesh & Bone</h1>
-        <div class="work-holder-element-info">
-          <h2>CMS & Languages</h2>
-         
-            <li>Wordpress</li>
-            <li>Divi Theme Builder</li>
-            <li>SCSS</li>
-        
-          <a class='workBtn' target="_blank" href='https://meshandbone.com/
-          '>View</a>
-        </div>
-      </div>
-      <div class='work-holder-element col-md-3' style="background-image: url('images/lush.jpg')">
-        <h1>Lush & Vine</h1>
-        <div class="work-holder-element-info">
-          <h2>CMS & Languages</h2>
-         
-            <li>Bigcommerce</li>
-            <li>Custom Developed Theme in Cornerstone</li>
-            <li>SCSS</li>
-            <li>Handlebars JS</li>
-            <li>JS & Jquery</li>
-        
-          <a class='workBtn' target="_blank" href='https://lushandvine.com'>View</a>
-        </div>
-      </div>
-      <div class='work-holder-element col-md-3' style="background-image: url('images/flex.jpg')">
-        <h1>Flexfire LEDs</h1>
-        <div class="work-holder-element-info">
-          <h2>CMS & Languages</h2>
-         
-            <li>BigCommerce</li>
-            <li>Custom Developed Theme in Cornerstone</li>
-            <li>SCSS</li>
-            <li>Handlebars JS</li>
-            <li>JS & Jquery</li>
-<!--         
-          <a class='workBtn' target="_blank"
-          '>View</a> -->
-        </div>
-      </div>
-      <div class='work-holder-element col-md-3' style="background-image: url('images/vinyl.jpg')">
-        <h1>Vinyl Shake</h1>
-        <div class="work-holder-element-info">
-          <h2>CMS & Languages</h2>
-         
-            <li>BigCommerce</li>
-            <li>Custom Developed Theme in Cornerstone</li>
-            <li>SCSS</li>
-            <li>Handlebars JS</li>
-            <li>JS & Jquery</li>
-        
-          <a class='workBtn' target="_blank" href='https://vinylshake.com/
-          '>View</a>
-        </div>
-      </div>
-      <div class='work-holder-element col-md-3' style="background-image: url('images/super.jpg')">
-        <h1>Super Hair Pieces</h1>
-        <div class="work-holder-element-info">
-          <h2>CMS & Languages</h2>
-         
-            <li>BigCommerce</li>
-            <li>Custom Developed Theme in Cornerstone</li>
-            <li>SCSS</li>
-            <li>Handlebars JS</li>
-            <li>JS & Jquery</li>
-        
-          <a class='workBtn' target="_blank" href='https://superhairpieces.com'>View</a>
-        </div>
-      </div>
-      <div class='work-holder-element col-md-3' style="background-image: url('images/diamond.png')">
-        <h1>Diamond Dynasty Virgin Hair</h1>
-        <div class="work-holder-element-info">
-          <h2>CMS & Languages</h2>
-         
-            <li>BigCommerce</li>
-            <li>Custom Developed Theme in Cornerstone</li>
-            <li>SCSS</li>
-            <li>Handlebars JS</li>
-            <li>JS & Jquery</li>
-        
-          <a class='workBtn' target="_blank" href='https://diamonddynastyvirginhair.com/'>View</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div id="skills" class="skillsSection section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h2>TECHNICAL SKILLS</h2>
-          <p>A representation of my proficiency in each skill</p>
-        </div>
-
-        <div class="owl-carousel owl-theme">
-          <div class="skill">
-            <span class="chart" data-percent="90">
-              <span class="percent">90</span>
-              <canvas height="152" width="152"></canvas>
-            </span>
-            <h4>HTML</h4>
-
+      <div class="contact-right">
+        <form name="contact" method="POST" data-netlify="true" class="contact-form reveal-up" id="contactForm">
+          <input type="hidden" name="form-name" value="contact">
+          <div class="form-group">
+            <input type="text" name="name" id="fname" required placeholder=" ">
+            <label for="fname">Your Name</label>
           </div>
-          <div class="skill">
-            <span class="chart" data-percent="90">
-              <span class="percent">90</span>
-              <canvas height="152" width="152"></canvas>
-            </span>
-            <h4>CSS/SCSS</h4>
-
+          <div class="form-group">
+            <input type="email" name="email" id="femail" required placeholder=" ">
+            <label for="femail">Your Email</label>
           </div>
-          <div class="skill">
-            <span class="chart" data-percent="60">
-              <span class="percent">60</span>
-              <canvas height="152" width="152"></canvas>
-            </span>
-            <h4>JS</h4>
-
+          <div class="form-group">
+            <textarea name="message" id="fmessage" required placeholder=" " rows="5"></textarea>
+            <label for="fmessage">Your Message</label>
           </div>
-          <div class="skill">
-            <span class="chart" data-percent="80">
-              <span class="percent">80</span>
-              <canvas height="152" width="152"></canvas>
-            </span>
-            <h4>CMS Theme Development <br> (Wordpress, Shopify, Bigcommerce)</h4>
-
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span class="submit-text">Send Message</span>
+            <span class="submit-icon"><i class="fas fa-arrow-right"></i></span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>&nbsp; Message sent! I'll get back to you soon.
           </div>
-        </div>
-
+        </form>
       </div>
     </div>
-  </div> -->
+  </section>
 
-
-  <div id="contact" class="contactSection section">
-    <div class="col-md-12 text-center">
-      <p class="subHeading">Like what you see?</p>
-      <h2>I'D LOVE TO HEAR FROM YOU!</h2>
-      <a href="mailTo:cierracodes@gmail.com" class="contactButton">GET IN TOUCH</a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 Cierra Hill. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="mailto:cierracodes@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
-  </div>
+  </footer>
 
-  <div class="copyrightSection">
-    <div class="col-md-12 text-center">
-      <p>&copy; Copyright Cierra Hill 2026</p>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="js/jquery.superslides.min.js"></script>
-  <script src="js/jquery.easypiechart.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/typed.min.js"></script>
   <script src="js/script.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 </body>
-
 
 </html>
